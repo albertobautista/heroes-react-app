@@ -1,11 +1,12 @@
 import React from "react";
-import { HeroesList } from "../components";
+import { HeroList } from "../components";
 
 export const DcPage = () => {
   return (
     <>
-      <h1>DC Page</h1>
-      <HeroesList publisher="DC Comics" />
+      <h1>DC Comics</h1>
+      <hr />
+      <HeroList publisher="DC Comics" />
     </>
   );
 };
