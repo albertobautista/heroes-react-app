@@ -16,8 +16,6 @@ describe("Test in AppRouter", () => {
       </MemoryRouter>
     );
 
-    screen.debug();
-
     expect(screen.getAllByText("Login").length).toBe(2);
   });
 
