@@ -8,7 +8,7 @@ describe("Test in <PrivateRoute/>", () => {
     Storage.prototype.setItem = jest.fn();
 
     const contextValue = {
-      logged: false,
+      logged: true,
       user: {
         id: 456,
         name: "Alberto",
@@ -23,7 +23,6 @@ describe("Test in <PrivateRoute/>", () => {
         </MemoryRouter>
       </AuthContext.Provider>
     );
-    screen.debug();
 
     expect(screen.getByText("Private Route")).toBeTruthy();
     expect(localStorage.setItem).toHaveBeenCalledWith(
